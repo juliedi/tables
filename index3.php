@@ -23,9 +23,10 @@
 
     <section class="row"> 
         <h2>Etape 3</h2>
-        <form method="post" name="tables" action="question.php">
-            <p>Teste tes connaissances :</p>
-            <select name="tables">
+        <form method="post" action="#">
+            <div id="container">
+                <p> Choisis dans la liste la table que tu veux apprendre ou réviser</p>
+                <select name="tables">
                     <option value="1">table de 1</option>
                     <option value="2">table de 2</option>
                     <option value="3">table de 3</option>
@@ -37,10 +38,31 @@
                     <option value="9">table de 9</option>
                     <option value="10">table de 10</option>
                 </select>
-                <input type="reset" value="Annuler"></input>
-                <input type="submit" value="Tester"></input>
+                
+                <div>
+                    <input type="reset" value="Annuler"></input>
+                    <input type="submit" value="Question au hasard"></input>
+                </div>
+            </div>
+            <div id="combien">
+            <?php
+            $choix = $_POST["tables"];
+            $hasard = mt_rand(1, 10);
+            {
+            echo "Combien font :".$choix."x".mt_rand(1, 10)."?";
+            }
+            ?>
+            </div>
+        </form>
+        <form method="post" action="#">
+        <textarea name="answer" id="" cols="30" rows="2"></textarea>
+        <div>
+            <input type="reset" value="Annuler"></input>
+            <input type="submit" value="Tester ma réponse"></input>
+        </div>
         </form>
     </section>
-
+   
 </body>
 </html>
+

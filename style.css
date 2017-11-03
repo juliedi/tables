@@ -45,6 +45,17 @@ nav ul li{
 a{
     color:#00587a;
     text-decoration:none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*section*/
+h2{
+    color:#00587a;
+}
+
+.listed{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 section{
@@ -63,10 +74,13 @@ section{
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff
 }
 
-input{
-    border-radius:50%;
-    width:120px;
-    height:120px;
+select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button{
+    width:200px;
+    height:50px;
     background: linear-gradient(#5FA6C1, #5FA6C1);
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
     border:none;
@@ -74,4 +88,9 @@ input{
     font: 18px Segoe UI;
     color: rgb(59, 78, 129);
     margin:20px;
+}
+
+#combien{
+    font-size:15px;
+    padding:30px;
 }
