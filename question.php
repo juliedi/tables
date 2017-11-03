@@ -1,8 +1,11 @@
 <?php 
-$reponse = $_post("reponse")
-$resultat = $
-    if($reponse==$resultat)
-        echo "Bravo! C'est la bonne réponse!"
+$reponse = $_post("multiplication");
+$joueur= $_post("answer");
+    if($reponse==$joueur) 
+    {
+        echo "Bravo! C'est la bonne réponse!";
+    }
     else
-        echo "Tu y es presque, essaye encore!"
+    
+        echo "Tu y es presque, essaye encore!";
 ?>
